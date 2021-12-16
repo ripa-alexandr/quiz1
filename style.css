@@ -78,3 +78,7 @@ html {
     color: rgb(224, 255, 247);
     border-radius: 4px;
 }
+.btn-group button:hover {
+    border: 1px solid transparent;
+    background-color: rgb(38, 120, 100);
+}
