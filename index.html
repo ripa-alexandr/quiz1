@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap.min-4.3.1.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap-4.3.1.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div id="st1" class="wrapper" style="display: block;">
@@ -21,29 +21,27 @@
         <div class="footer">
           <div class="col-sm-12">
             <div class="btn-group">
-              <button onclick="location.href='{offer}'" type="button" class="btn btn-primary">Let's do it</button>
+              <button type="button" class="btn btn-primary" value="st2">Let's do it</button>
             </div>
           </div>          
         </div>
       </section>
     </div>
+    <div id="st2" class="wrapper" style="display: none;">
+      <span>1111111111111111</span>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap-4.3.1.min.js"></script>
 
     <!-- Local JS -->
     <script>
         $(function() {
-            $('#st1 .answer-img').click(function() {
-                $("#st1").css("display", "none");
-                $("#st2").css("display", "block");
-            });
-
-            $('#st2 .answer-img').click(function() {
-                $("#st2").css("display", "none");
-                $("#st3").css("display", "block");
+            $(".btn").click(function(event) {
+                $(".wrapper").css("display", "none");
+                $("#" + event.target.value).css("display", "block");
             });
         });
     </script>
