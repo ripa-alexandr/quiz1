@@ -15,7 +15,13 @@ html {
     height: 100%;
     outline: none;
 }
-.section-wrapper {
+.greeting-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.question-wrapper {
     position: relative;
     height: 100%;
     width: 100%;
@@ -81,4 +87,96 @@ html {
 .btn-group button:hover {
     border: 1px solid transparent;
     background-color: rgb(38, 120, 100);
+}
+
+.question-wrapper {
+    height: 100%;
+    width: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+}
+.answer-section {
+    display: inline-flex;
+    margin: 0px 0px -8px;
+    list-style: none;
+    padding: 0px;
+    flex-flow: column wrap;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    max-width: 100%;
+    min-width: 168px;
+}
+.answer-row {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: rgba(0, 96, 72, 0.1);
+    box-shadow: rgb(0 96 72 / 60%) 0px 0px 0px 1px inset;
+    color: rgb(0, 96, 72);
+    max-width: 100%;
+    min-width: 75px;
+    min-height: 40px;
+    outline: 0px;
+    padding: 4px;
+    transition-duration: 0.1s;
+    transition-property: background-color, color, border-color, opacity, box-shadow;
+    transition-timing-function: ease-out;
+    width: 100%;
+    cursor: pointer;
+    opacity: 1;
+    margin-bottom: 8px;
+}
+.answer-number {
+    margin: 0px 8px 0px 2px;
+    height: 24px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgba(0, 96, 72, 0.6);
+    background-color: rgb(202, 231, 214);
+}
+.answer-letter {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: 700;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.answer-text {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 0%;
+    min-width: 75px;
+    text-align: left;
+    padding-left: 0px;
+}
+.choice {
+    margin-right: -4px;
+    flex-shrink: 0;
+    padding: 0px 12px 0px 20px;
+    opacity: 1;
+}
+.choice svg {
+    display: block;
+    fill: rgb(0, 96, 72);
+    transition: fill 0.2s ease 0s;
 }
