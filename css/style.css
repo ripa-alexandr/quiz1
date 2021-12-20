@@ -21,16 +21,6 @@ html {
     display: flex;
     flex-direction: column;
 }
-.question-wrapper {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    flex-direction: column;
-    align-self: flex-start;
-}
 .main {
     position: relative;
     height: 100%;
@@ -90,16 +80,16 @@ html {
 }
 
 .question-wrapper {
+    position: relative;
     height: 100%;
     width: 100%;
+    display: flex;
     -webkit-box-pack: center;
     justify-content: center;
     flex-direction: column;
     align-self: flex-start;
-
-    padding-left: 40px;
-    padding-right: 40px;
-    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .answer-section {
     display: inline-flex;
